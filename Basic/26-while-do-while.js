@@ -12,3 +12,8 @@ while (rand !== 10){
     console.log(rand)
 
 }
+console.log('############')
+
+do {
+    console.log(rand);
+} while(rand !== 10);

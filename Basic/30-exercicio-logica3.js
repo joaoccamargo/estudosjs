@@ -4,9 +4,6 @@ retorne o seguinte:
 Numero é divisivel por 3 = Fizz
 Numero é divisivel por 5 = Buzz
 Numero é divisivel por 3 e 5 = FizzBuzz
-Numero Não é divisivel pro 3 e 5 = Retorna o proprio numero
-Chegar se o numero é realmente um numero
-Use a função com numeros de 0 a 100
 */
 
 // function myFunc(numero, divisor) {
@@ -16,15 +13,16 @@ Use a função com numeros de 0 a 100
 
 //const fizzBuzz = (numero, divisor) => numero % divisor == 0 ? `Fizz ${true}` : `Numero não é divisivel ${false}`
 
-function fizzBuzz (numero, divisor){
+function fizzBuzz (numero){
     
-    if (numero % divisor == 0){
-        console.log('O numero é divisivel')
-    }else{
-        console.log('O numero não é divisivel')
+    if (numero % 3 == 0 && numero % 5 == 0){
+        console.log('FizzBuzz')
+    }else if(numero % 5 == 0){
+        console.log('Buzz')
+    }else if(numero % 3 == 0){
+        console.log('Fizz')
     }
 }
 
-
-console.log()
+console.log(fizzBuzz(15))
 
